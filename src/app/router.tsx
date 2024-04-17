@@ -1,5 +1,6 @@
 import { createHashRouter } from 'react-router-dom';
-import { MainPage } from '@/pages/main';
+import { QuizGuard, QuizPage } from '@/pages/quiz';
+import { MainPage } from '@/pages/main-page/main-page.tsx';
 
 export const router = createHashRouter([
   {
@@ -8,6 +9,14 @@ export const router = createHashRouter([
       {
         path: '/',
         element: <MainPage />,
+      },
+      {
+        path: '/quiz',
+        element: (
+          <QuizGuard>
+            <QuizPage />,
+          </QuizGuard>
+        ),
       },
     ],
   },

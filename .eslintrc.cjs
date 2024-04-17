@@ -8,7 +8,8 @@ module.exports = {
     'airbnb',
     'airbnb-typescript',
     'airbnb/hooks',
-    '@feature-sliced'
+    "@feature-sliced/eslint-config/rules/layers-slices",
+    "plugin:prettier/recommended"
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
@@ -25,6 +26,8 @@ module.exports = {
     "react/require-default-props": "off",
     'react/jsx-props-no-spreading': 'off',
     "react/react-in-jsx-scope": "off",
+    'no-nested-ternary': "off",
+    'no-param-reassign': "off",
     'import/extensions': 'off',
     'react-refresh/only-export-components': [
       'warn',

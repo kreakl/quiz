@@ -1,0 +1,104 @@
+{
+  "id": 1,
+  "name": "Насколько хорошо ты разбираешься во фронтенде?",
+  "description": "Мы составили викторину по основным понятиям фронтенд-разработки — пройдите её и определите свой уровень. Тем, кто никогда не занимался фронтендом, пройти тест тоже рекомендуем — вдруг вы в душе тот ещё фронтендер :) Поехали!",
+  "duration": 600,
+  "steps": [
+    {
+      "required": true,
+      "question": "Что должен знать фронтенд-разработчик? Назовите три ключевых технологии",
+      "type": "radio",
+      "options": [
+        "HTML, CSS и JavaScript",
+        "Kotlin, PHP и JavaScript",
+        "PHP, HTML и CSS"
+      ]
+    },
+    {
+      "required": true,
+      "question": "Null и undefined в JavaScript — это одно и то же?",
+      "type": "radio",
+      "options": [
+        "Да",
+        "Нет"
+      ]
+    },
+    {
+      "required": true,
+      "question": "Укажите существующие комманды git среди перечисленныx ниже",
+      "type": "checkbox",
+      "options": [
+        "git log",
+        "git history",
+        "git cat",
+        "git commit"
+      ]
+    },
+    {
+      "required": true,
+      "question": "Укажите существующие типы данных JavaScript среди перечисленныx ниже",
+      "type": "checkbox",
+      "options": [
+        "number",
+        "float",
+        "string",
+        "Symbol",
+        "none"
+      ]
+    },
+    {
+      "required": true,
+      "type": "textarea",
+      "question": "Напишите пустой бойлерплейт HTML файла"
+    },
+    {
+      "required": true,
+      "type": "text",
+      "question": "Структура данных в JavaScript, коллекция ключ/значение, как и Object, позволяющая использовать ключи любого типа."
+    },
+    {
+      "required": true,
+      "type": "radio",
+      "options": [
+        "React",
+        "Angular",
+        "Vue",
+        "JQuery"
+      ],
+      "question": "useState() — из какого JS-фреймворка взят этот фрагмент кода?"
+    },
+    {
+      "required": true,
+      "type": "radio",
+      "options": [
+        "Angular",
+        "Vue",
+        "React",
+        "JQuery"
+      ],
+      "question": "className — из какого это JS-фреймворка?"
+    },
+    {
+      "required": true,
+      "type": "radio",
+      "options": [
+        "Создатель Angular",
+        "Создатель Redux",
+        "Создатель React",
+        "Ноунейм"
+      ],
+      "question": "Кто такой Дэн Абрамов?"
+    },
+    {
+      "required": true,
+      "question": "Укажите все CSS-фреймворки, перечисленные ниже",
+      "type": "checkbox",
+      "options": [
+        "Redux",
+        "Bootstrap",
+        "Tailwind",
+        "Next.JS"
+      ]
+    }
+  ]
+}

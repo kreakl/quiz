@@ -1,6 +1,12 @@
 import { extendTheme } from '@chakra-ui/react';
+import { buttonTheme } from '@/shared/ui';
+import { stepperTheme } from '@/shared/ui/stepper.ts';
 
 export const theme = extendTheme({
+  components: {
+    Button: buttonTheme,
+    Stepper: stepperTheme,
+  },
   colors: {
     primary: {
       50: { value: '#fef2f2' },
