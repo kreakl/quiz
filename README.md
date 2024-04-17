@@ -1,3 +1,6 @@
+# Структура проекта
+Структура проекта выдержана согласно принципам Feature-Sliced Design https://feature-sliced.design/ru/docs/get-started/overview
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
