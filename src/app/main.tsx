@@ -11,7 +11,11 @@ import { theme } from './theme.ts';
 
 async function initApp() {
   const module = await import('@/app/mock-server.ts');
-  await module.apiMockWorker.start();
+  await module.apiMockWorker.start({
+    serviceWorker: {
+      url: '/quiz/mockServiceWorker.js'
+    }
+  });
 }
 
 initApp().then(() => {
