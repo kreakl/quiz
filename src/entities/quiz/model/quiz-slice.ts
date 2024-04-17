@@ -86,4 +86,6 @@ export const selectIsLastStep = createSelector(
 
 export const selectQuizStatus = (state: RootState) => state.quiz.status;
 
+export const selectQuizResults = (state: RootState) => state.quiz.results;
+
 export const selectQuizStartedTime = (state: RootState) => state.quiz.started;

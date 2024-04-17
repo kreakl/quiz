@@ -1,20 +1,16 @@
-import { selectQuizStartedTime, submitQuiz } from '@/entities/quiz';
-import { useAppDispatch, useAppSelector } from '@/shared/model';
+import { selectQuizStartedTime } from '@/entities/quiz';
+import { useAppSelector } from '@/shared/model';
 import { Countdown } from '@/shared/ui';
 
 export type QuizCountdownProps = {
   duration: number;
+  onCountdown: () => void;
 };
 
-export function QuizCountdown({ duration }: QuizCountdownProps) {
-  const dispatch = useAppDispatch();
-
+export function QuizCountdown({ duration, onCountdown }: QuizCountdownProps) {
   const started = useAppSelector(selectQuizStartedTime) || Date.now();
   const elapsed = Math.floor((Date.now() - started) / 1000);
   const currentDuration = duration - elapsed;
-  const onCountdown = () => {
-    dispatch(submitQuiz());
-  };
 
   return <Countdown duration={currentDuration} onCountdown={onCountdown} />;
 }

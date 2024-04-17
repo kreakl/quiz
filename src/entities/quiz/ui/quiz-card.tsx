@@ -24,6 +24,7 @@ export function QuizCard() {
   const dispatch = useAppDispatch();
 
   const status = useAppSelector(selectQuizStatus);
+
   const { data, isFetching } = useGetQuizByIdQuery(1); // hardcoded quiz id
   const { name, description } = data || {};
 
